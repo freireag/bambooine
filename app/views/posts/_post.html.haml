@@ -1,0 +1,5 @@
+%h2= link_to h(post.title), post
+%small= "by Thiago Freire " + time_ago_in_words(post.created_at) + " ago"
+%small= link_to "Edit", edit_object_path(post)
+%p= textilize h(post.body)
+%br
