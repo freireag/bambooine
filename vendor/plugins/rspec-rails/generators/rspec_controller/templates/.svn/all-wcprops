@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/generators/rspec_controller/templates
+END
+controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/generators/rspec_controller/templates/controller_spec.rb
+END
+view_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/generators/rspec_controller/templates/view_spec.rb
+END
+helper_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/generators/rspec_controller/templates/helper_spec.rb
+END

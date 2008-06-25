@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/stories
+END
+transactions_should_rollback
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/stories/transactions_should_rollback
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/stories/helper.rb
+END
+transactions_should_rollback.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/stories/transactions_should_rollback.rb
+END
+all.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/stories/all.rb
+END

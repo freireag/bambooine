@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/spec/spec/runner/formatter/story
+END
+html_formatter_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/spec/spec/runner/formatter/story/html_formatter_spec.rb
+END
+plain_text_formatter_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/spec/spec/runner/formatter/story/plain_text_formatter_spec.rb
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/stories/mock_framework_integration
+END
+use_flexmock.story
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/stories/mock_framework_integration/use_flexmock.story
+END
+stories.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/stories/mock_framework_integration/stories.rb
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/story/extensions
+END
+main.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/story/extensions/main.rb
+END
+string.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/story/extensions/string.rb
+END
+regexp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/story/extensions/regexp.rb
+END

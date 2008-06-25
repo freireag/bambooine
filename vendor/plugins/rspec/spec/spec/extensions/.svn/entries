@@ -1,0 +1,40 @@
+8
+
+dir
+16
+http://freireag.svn.beanstalkapp.com/bambooine/trunk/vendor/plugins/rspec/spec/spec/extensions
+http://freireag.svn.beanstalkapp.com/bambooine
+
+
+
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0444ab02-770f-4c13-a078-6dbff9d429ee
+
+main_spec.rb
+file
+
+
+
+
+2008-06-15T05:33:19.000000Z
+f736a43558e4023339f7b76e2f4417fa
+2008-06-12T23:09:49.287935Z
+5
+freireag
+

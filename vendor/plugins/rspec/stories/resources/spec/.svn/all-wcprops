@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/stories/resources/spec
+END
+spec_with_flexmock.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/stories/resources/spec/spec_with_flexmock.rb
+END
+example_group_with_should_methods.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/stories/resources/spec/example_group_with_should_methods.rb
+END
+simple_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/stories/resources/spec/simple_spec.rb
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec
+END
+_replacement_partial.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/_replacement_partial.rhtml
+END
+replace_html_with_partial.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/replace_html_with_partial.rjs
+END
+insert_html.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/insert_html.rjs
+END
+hide_div.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/hide_div.rjs
+END
+replace.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/replace.rjs
+END
+hide_page_element.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/hide_page_element.rjs
+END
+replace_html.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/replace_html.rjs
+END
+visual_effect.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/visual_effect.rjs
+END
+visual_toggle_effect.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec-rails/spec_resources/views/rjs_spec/visual_toggle_effect.rjs
+END

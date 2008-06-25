@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example
+END
+shared_example_group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/shared_example_group.rb
+END
+example_group_factory.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/example_group_factory.rb
+END
+example_matcher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/example_matcher.rb
+END
+example_methods.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/example_methods.rb
+END
+module_inclusion_warnings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/module_inclusion_warnings.rb
+END
+module_reopening_fix.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/module_reopening_fix.rb
+END
+pending.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/pending.rb
+END
+configuration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/configuration.rb
+END
+example_group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/example_group.rb
+END
+example_group_methods.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb
+END
+errors.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/bambooine/!svn/ver/5/trunk/vendor/plugins/rspec/lib/spec/example/errors.rb
+END

@@ -1,0 +1,40 @@
+8
+
+dir
+16
+http://freireag.svn.beanstalkapp.com/bambooine/trunk/vendor/plugins/rspec/lib/spec/interop/test/unit/ui/console
+http://freireag.svn.beanstalkapp.com/bambooine
+
+
+
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0444ab02-770f-4c13-a078-6dbff9d429ee
+
+testrunner.rb
+file
+
+
+
+
+2008-06-15T05:33:29.000000Z
+d25d79142b82086432e7320013efee6c
+2008-06-12T23:09:49.287935Z
+5
+freireag
+

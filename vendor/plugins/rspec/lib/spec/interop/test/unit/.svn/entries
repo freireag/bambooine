@@ -1,0 +1,79 @@
+8
+
+dir
+16
+http://freireag.svn.beanstalkapp.com/bambooine/trunk/vendor/plugins/rspec/lib/spec/interop/test/unit
+http://freireag.svn.beanstalkapp.com/bambooine
+
+
+
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0444ab02-770f-4c13-a078-6dbff9d429ee
+
+testresult.rb
+file
+
+
+
+
+2008-06-15T05:33:29.000000Z
+576fc26452bd18d6df6c4a9b14082866
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+autorunner.rb
+file
+
+
+
+
+2008-06-15T05:33:29.000000Z
+2fecc8bfe2828c236d96be53d2b467d4
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+testsuite_adapter.rb
+file
+
+
+
+
+2008-06-15T05:33:29.000000Z
+7ab0e1b0534abe30185b50af35e01a0d
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+ui
+dir
+
+testcase.rb
+file
+
+
+
+
+2008-06-15T05:33:29.000000Z
+45f03bdf92cc5fd84e297641058f435b
+2008-06-12T23:09:49.287935Z
+5
+freireag
+

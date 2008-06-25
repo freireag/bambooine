@@ -1,0 +1,163 @@
+8
+
+dir
+16
+http://freireag.svn.beanstalkapp.com/bambooine/trunk/vendor/plugins/rspec
+http://freireag.svn.beanstalkapp.com/bambooine
+
+
+
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0444ab02-770f-4c13-a078-6dbff9d429ee
+
+plugins
+dir
+
+Rakefile
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+51b2ad6796a872974c27bbc8ae14b8fc
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+.autotest
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+b1da8089d1b3b0e7ef157fc16006fc12
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+UPGRADE
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+f28d0b8b8a7e2dea6a154391a05e16a3
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+rake_tasks
+dir
+
+stories
+dir
+
+spec
+dir
+
+README
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+0ea971e85d00ecb7fad45dc645b39dd2
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+TODO
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+68b329da9893e34099c7d8ad5cb9c940
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+init.rb
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+640f74b8156893c1bc98a2050c8589d3
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+.gitignore
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+7193433966934327275325aa572e4a99
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+story_server
+dir
+
+lib
+dir
+
+failing_examples
+dir
+
+bin
+dir
+
+CHANGES
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+378ed32693cd6001028e51ab2e3bd637
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+MIT-LICENSE
+file
+
+
+
+
+2008-06-15T05:33:47.000000Z
+e52fb646a736962ed0bdd48ae2c242de
+2008-06-12T23:09:49.287935Z
+5
+freireag
+
+examples
+dir
+
