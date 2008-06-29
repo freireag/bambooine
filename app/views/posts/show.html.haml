@@ -1,2 +1,7 @@
 = render :partial => @post
 = link_to 'Back', collection_url
+= render :partial => 'comments/comment', :collection => @post.comments
+%h3 Comments
+- form_for([@post, Comment.new]) do |f|
+  = render :partial => 'comments/form', :locals => {:form => f}
+  = submit_tag "Comment!"
