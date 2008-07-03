@@ -2,5 +2,7 @@
 %small= "by Thiago Freire " + time_ago_in_words(post.created_at) + " ago "
 %small== | #{comments_string(post)}
 %small== | #{link_to "Edit", edit_object_path(post)}
+%br
+%small= h(post.tag_list)
 %p= textilize h(post.body)
 %br

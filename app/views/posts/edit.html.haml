@@ -1,5 +1,4 @@
 %h1 Editing post
-= error_messages_for :post
 - form_for(:post, :url => object_url, :html => { :method => :put }) do |f|
   = render :partial => "form", :locals => { :form => f }
   %p= submit_tag "Update"

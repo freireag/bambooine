@@ -6,6 +6,12 @@
     %title Bambooine
     = javascript_include_tag :defaults
   %body
+    %h1= link_to 'freireag', root_path
     %span.flash_notice
       = flash[:notice]
-    = yield
+    %table{:border => 1}
+      %tr
+        %td
+          = yield
+        %td{:valign => 'top'}
+          = tag_index

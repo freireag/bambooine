@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.connect 'tag/:id', :controller => 'posts', :action => 'tag'
   map.resources :posts, :has_many => :comments
   map.root :controller => 'posts'
   # The priority is based upon order of creation: first created -> highest priority.
