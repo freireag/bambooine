@@ -7,4 +7,9 @@ class PostsController < ResourceController::Base
       wants.xml {render :xml => @posts.to_xml(:include => @tag)}
     end
   end
+  
+  private
+  def collection
+    @collection ||= end_of_association_chain.search(params[:search])
+  end
 end

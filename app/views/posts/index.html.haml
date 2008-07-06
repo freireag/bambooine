@@ -1,2 +1,5 @@
 = link_to 'New post', new_object_url
+- form_tag posts_path, :method => :get do
+  = text_field_tag :search, params[:search]
+  = submit_tag 'Search', :name => nil
 = render :partial => @posts.reverse
