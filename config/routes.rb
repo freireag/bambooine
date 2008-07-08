@@ -1,4 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil 
+  map.logout '/logout', :controller => 'accounts', :action => 'destroy'
+  map.login '/login', :controller => 'accounts', :action => 'new'
+  map.register '/register', :controller => 'users', :action => 'create'
+  map.signup '/signup', :controller => 'users', :action => 'new'
+  map.resources :users
+
+  map.resource :account, :controller => 'accounts'
+
   map.connect 'tag/:id', :controller => 'posts', :action => 'tag'
   map.resources :posts, :has_many => :comments
   map.root :controller => 'posts'
