@@ -1,10 +1,17 @@
-%h2= link_to h(post.title), post
-%small= "by Thiago Freire " + time_ago_in_words(post.created_at) + " ago "
-%small== | #{comments_string(post)}
--if logged_in?
-  %small== | #{link_to "Edit", edit_object_path(post)}
-  %small== | #{link_to "Delete", object, :method => :delete}
-%br
-%small= h(post.tag_list)
-%p= textilize h(post.body)
-%br
+%div{:id => "meta", :class => ("with_body" if body)}
+  -#%small= time_ago_in_words(post.created_at) + " ago "
+  %small= post.created_at.strftime("%d/%m/%Y")
+  %br
+  -if authorized?
+    %small
+      == #{link_to "Edit", edit_object_path(post)}
+      == | #{link_to "Delete", object, :method => :delete}
+    %br
+  %small= (post.tag_list.values_at(0..2).delete_if {|x| !x}.join(", "))
+#post
+  %h2
+    = link_to h(post.title), post
+    .comments
+      = link_to "{#{post.comments.count}}", post_path(post, :anchor => "comments")
+  %p= markdown h(body) if body
+  %br

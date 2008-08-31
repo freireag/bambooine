@@ -1,4 +1,7 @@
 class PostsController < ResourceController::Base
+  
+  index.wants.atom
+  
   def tag
     @tag = params[:id]
     @posts = Post.find_tagged_with(@tag, :order => "created_at")

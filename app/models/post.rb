@@ -12,4 +12,5 @@ class Post < ActiveRecord::Base
       find(:all)
     end
   end
+  
 end

@@ -43,8 +43,8 @@ if defined?(ActionView) and not defined?(Merb::Plugins)
             capture_erb_with_buffer_without_haml(*args, &block)
           end
         end
-        alias_method :capture_erb_with_buffer_without_haml, :capture_erb_with_buffer
         alias_method :capture_erb_with_buffer, :capture_erb_with_buffer_with_haml
+        alias_method :capture_erb_with_buffer_without_haml, :capture_erb_with_buffer
       end
 
       module TextHelper
