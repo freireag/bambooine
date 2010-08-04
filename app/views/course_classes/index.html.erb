@@ -1,0 +1,46 @@
+<h1>Listando turmas</h1>
+
+<table>
+  <tr>
+    <th>Número</th>
+    <th>Código</th>
+    <th>Horário de Início</th>
+    <th>Horário de Término</th>
+    <th>Início Previsto</th>
+    <th>Término Previsto</th>
+    <th>Curso</th>
+    <th>Cidade</th>
+    <th>Observacão</th>
+  </tr>
+
+<% @course_classes.each do |course_class| %>
+  <tr>
+    <td><%=h course_class.number %></td>
+    <td><%=h course_class.code %></td>
+    <td><%=h course_class.start_time %></td>
+    <td><%=h course_class.end_time %></td>
+    <td><%=h course_class.start_date %></td>
+    <td><%=h course_class.end_date %></td>
+    <td><%=h course_class.course.name %></td>
+    <td><%=h course_class.city.name %></td>
+    <td><%=h course_class.observation %></td>
+    <td><%= link_to "Avaliacões", course_class_exams_path(course_class) %>
+    <td><%= link_to "Alunos", course_class_students_path(course_class) %>
+    <td><%= link_to "Frequências", course_class_frequencies_path(course_class) %>
+    <td><%= link_to 'Visalizar', course_class %></td>
+    <% if can? :update, course_class %>
+      <td><%= link_to 'Editar', edit_course_class_path(course_class) %></td>
+    <% end %>
+    <% if can? :destroy, course_class %>
+      <td><%= link_to 'Remover', course_class, :confirm => 'Tem certeza?', :method => :delete %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<% if can? :create, @course_classes %>
+  <%= link_to 'Nova turma', new_course_class_path %>
+<% end %>
+

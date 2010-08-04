@@ -1,0 +1,30 @@
+<h1>Listando cursos</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Código</th>
+    <th>Carga Horária</th>
+    <th>Preço</th>
+  </tr>
+
+<% @courses.each do |course| %>
+  <tr>
+    <td><%=h course.name %></td>
+    <td><%=h course.code %></td>
+    <td><%=h course.credit_hours %></td>
+    <td><%=h course.price %></td>
+    <td><%= link_to 'Visualizar', course %></td>
+    <% if can? :update, course %>
+      <td><%= link_to 'Editar', edit_course_path(course) %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<% if can? :create, @courses %>
+  <%= link_to 'Novo curso', new_course_path %>
+<% end %>
+

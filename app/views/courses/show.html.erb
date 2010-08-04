@@ -1,0 +1,33 @@
+<p>
+  <b>Nome:</b>
+  <%=h @course.name %>
+</p>
+
+<p>
+  <b>Código:</b>
+  <%=h @course.code %>
+</p>
+
+<p>
+  <b>Carga Horária:</b>
+  <%=h @course.credit_hours %>
+</p>
+
+<p>
+  <b>Preço:</b>
+  <%=h @course.price %>
+</p>
+
+<h2>Arquivos</h2>
+
+<% @course.admin_files.each do |file| %>
+  <p>
+    <%= link_to h(file.title_or_name), file.attachment.url %> |
+    <%=h file.attachment_updated_at.strftime("%d/%m/%Y") %>
+  </p>
+<% end %>
+<% if can? :update, @course %>
+  <%= link_to 'Editar', edit_course_path(@course) %> |
+<% end %>
+<%= link_to 'Voltar', courses_path %>
+
