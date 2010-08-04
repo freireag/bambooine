@@ -87,5 +87,15 @@ class StudentsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def warning
+    @student = Student.find(params[:id])
+    if PaymentMailer.deliver_payment_warning(@student)
+      flash[:notice] = "O email foi enviado com sucesso."
+    else
+      flash[:error] = "Por alguma razão o email não foi enviado"
+    end
+    redirect_to students_path
+  end
 end
 

@@ -28555,3 +28555,566 @@ Processing CoursesController#index (for 127.0.0.1 at 2010-08-04 07:20:15) [GET]
 Rendering template within layouts/application
 Rendering courses/index
 Completed in 51ms (View: 11, DB: 3) | 200 OK [http://localhost/cursos]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-04 08:41:56) [GET]
+  [4;36;1mUser Load (4.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/cursos
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 15ms (DB: 4) | 302 Found [http://localhost/]
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-08-04 08:41:57) [GET]
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mCourse Load (0.8ms)[0m   [0;1mSELECT * FROM "courses" [0m
+Rendering template within layouts/application
+Rendering courses/index
+Completed in 183ms (View: 144, DB: 3) | 200 OK [http://localhost/cursos]
+
+
+Processing AdminFilesController#index (for 127.0.0.1 at 2010-08-04 08:42:05) [GET]
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin_files/index
+  [4;36;1mAdminFile Load (0.9ms)[0m   [0;1mSELECT * FROM "admin_files" [0m
+  [4;35;1mCourse Load (0.6ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCourse Load (0.6ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 232ms (View: 167, DB: 5) | 200 OK [http://localhost/arquivos]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 08:42:06) [GET]
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStudent Load (1.2ms)[0m   [0mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 118ms (View: 70, DB: 3) | 200 OK [http://localhost/alunos]
+
+
+Processing StudentsController#edit (for 127.0.0.1 at 2010-08-04 08:42:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.6ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering students/edit
+Completed in 137ms (View: 90, DB: 2) | 200 OK [http://localhost/alunos/1/editar]
+
+
+Processing StudentsController#update (for 127.0.0.1 at 2010-08-04 08:42:19) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"tHT7AKAYn2n/WJ27EiGeyncpmDJOhOhbsHLn2jVOu7E=", "id"=>"1", "student"=>{"name"=>"Aluno Dois", "birthdate(1i)"=>"2010", "password_confirmation"=>"", "birthdate(2i)"=>"7", "cpf"=>"123456789", "birthdate(3i)"=>"1", "phone"=>"", "password"=>"", "marital_status"=>"solteiro", "birthplace"=>"", "rg"=>"", "email"=>"freireag@gmail.com"}}
+  [4;35;1mStudent Load (1.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."cpf" = '123456789' AND "students".id <> 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering students/edit
+Completed in 245ms (View: 113, DB: 2) | 200 OK [http://localhost/alunos/1]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 08:42:31) [GET]
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStudent Load (0.9ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 138ms (View: 80, DB: 3) | 200 OK [http://localhost/alunos]
+
+
+Processing StudentsController#new (for 127.0.0.1 at 2010-08-04 08:42:33) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering students/new
+Completed in 119ms (View: 74, DB: 1) | 200 OK [http://localhost/alunos/novo]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 08:43:15) [GET]
+  [4;36;1mUser Load (5.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStudent Load (11.6ms)[0m   [0mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 241ms (View: 89, DB: 17) | 200 OK [http://localhost/alunos]
+
+
+Processing StudentsController#edit (for 127.0.0.1 at 2010-08-04 08:43:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.7ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering students/edit
+Completed in 124ms (View: 50, DB: 2) | 200 OK [http://localhost/alunos/1/editar]
+
+
+Processing StudentsController#update (for 127.0.0.1 at 2010-08-04 08:43:28) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"tHT7AKAYn2n/WJ27EiGeyncpmDJOhOhbsHLn2jVOu7E=", "id"=>"1", "student"=>{"name"=>"Aluno Dois", "birthdate(1i)"=>"2010", "password_confirmation"=>"", "birthdate(2i)"=>"7", "cpf"=>"123456789", "birthdate(3i)"=>"1", "phone"=>"1230982346", "password"=>"", "marital_status"=>"solteiro", "birthplace"=>"", "rg"=>"1223019812", "email"=>"freireag@gmail.com"}}
+  [4;35;1mStudent Load (0.8ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."cpf" = '123456789' AND "students".id <> 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering students/edit
+Completed in 185ms (View: 58, DB: 2) | 200 OK [http://localhost/alunos/1]
+
+
+Processing StudentsController#update (for 127.0.0.1 at 2010-08-04 08:43:37) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"tHT7AKAYn2n/WJ27EiGeyncpmDJOhOhbsHLn2jVOu7E=", "id"=>"1", "student"=>{"name"=>"Aluno Dois", "birthdate(1i)"=>"2010", "password_confirmation"=>"", "birthdate(2i)"=>"7", "cpf"=>"123456789", "birthdate(3i)"=>"1", "phone"=>"1230982346", "password"=>"", "marital_status"=>"solteiro", "birthplace"=>"brasileiro", "rg"=>"1223019812", "email"=>"freireag@gmail.com"}}
+  [4;35;1mStudent Load (1.4ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."cpf" = '123456789' AND "students".id <> 1) LIMIT 1[0m
+  [4;35;1mStudent Update (124.7ms)[0m   [0mUPDATE "students" SET "phone" = '1230982346', "updated_at" = '2010-08-04 11:43:37', "email" = 'freireag@gmail.com', "rg" = '1223019812', "marital_status" = 'solteiro', "birthplace" = 'brasileiro' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/alunos/1
+Completed in 207ms (DB: 127) | 302 Found [http://localhost/alunos/1]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-08-04 08:43:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.7ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering students/show
+Completed in 71ms (View: 27, DB: 1) | 200 OK [http://localhost/alunos/1]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 08:43:43) [GET]
+  [4;35;1mUser Load (13.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStudent Load (1.0ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 307ms (View: 105, DB: 14) | 200 OK [http://localhost/alunos]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 09:06:59) [GET]
+  [4;35;1mUser Load (20.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStudent Load (1.0ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+ERROR: compiling _run_erb_app47views47students47index46html46erb RAISED compile error
+/home/freireag/code/bambooine/app/views/students/index.html.erb:31: unknown regexp options - td
+/home/freireag/code/bambooine/app/views/students/index.html.erb:31: unmatched ): /td>
+    <td><%= link_to 'Visualizar', student ).to_s); @output_buffer.concat "</
+/home/freireag/code/bambooine/app/views/students/index.html.erb:31: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    "
+                              ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:32: syntax error, unexpected $undefined, expecting ')'
+;  if can? :update, student ; @output_buffer.concat "\n      <td>"
+                                                      ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:36: unknown regexp options - td
+/home/freireag/code/bambooine/app/views/students/index.html.erb:36: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    "
+                              ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:37: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n  </tr>\n"
+                                 ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:39: unknown regexp options - tabl
+/home/freireag/code/bambooine/app/views/students/index.html.erb:39: syntax error, unexpected $undefined
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                           ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:39: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                                   ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:39: unterminated string meets end of file
+Function body:           def _run_erb_app47views47students47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listando alunos\n"
+;  if @course_class ; @output_buffer.concat "\n  de "
+; @output_buffer.concat(( @course_class.code ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n</h1>\n\n<table>\n  <tr>\n    <th>Nome</th>\n    <th>Email</th>\n    <th>Telefone</th>\n    <th>RG</th>\n    <th>CPF</th>\n    <th>Naturalidade</th>\n    <th>Data de Nascimento</th>\n    <th>Estado Civil</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  @students.each do |student| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat((h student.name ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h student.email ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h student.phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h student.rg ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h student.cpf ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h student.birthplace ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h student.birthdate ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h student.marital_status ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Turmas', student_student_classes_path(student) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Enviar Aviso', :action => :warning</td>
+    <td><%= link_to 'Visualizar', student ).to_s); @output_buffer.concat "</td>\n    "
+;  if can? :update, student ; @output_buffer.concat "\n      <td>"
+; @output_buffer.concat(( link_to 'Editar', edit_student_path(student) ).to_s); @output_buffer.concat "</td>\n    "
+;  end ; @output_buffer.concat "\n    "
+;  if can? :destroy, student ; @output_buffer.concat "\n      <td>"
+; @output_buffer.concat(( link_to 'Remover', student, :confirm => 'Tem certeza?', :method => :delete ).to_s); @output_buffer.concat "</td>\n    "
+;  end ; @output_buffer.concat "\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+;  if can? :create, @students ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( link_to 'Novo aluno', new_student_path ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/freireag/code/bambooine/app/views/students/index.html.erb:39:in `compile!'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/freireag/code/bambooine/app/controllers/students_controller.rb:14:in `index'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/commands/server.rb:111
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/home/freireag/code/bambooine/app/views/students/index.html.erb:31: unknown regexp options - td
+/home/freireag/code/bambooine/app/views/students/index.html.erb:31: unmatched ): /td>
+    <td><%= link_to 'Visualizar', student ).to_s); @output_buffer.concat "</
+/home/freireag/code/bambooine/app/views/students/index.html.erb:31: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    "
+                              ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:32: syntax error, unexpected $undefined, expecting ')'
+;  if can? :update, student ; @output_buffer.concat "\n      <td>"
+                                                      ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:36: unknown regexp options - td
+/home/freireag/code/bambooine/app/views/students/index.html.erb:36: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    "
+                              ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:37: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n  </tr>\n"
+                                 ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:39: unknown regexp options - tabl
+/home/freireag/code/bambooine/app/views/students/index.html.erb:39: syntax error, unexpected $undefined
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                           ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:39: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                                   ^
+/home/freireag/code/bambooine/app/views/students/index.html.erb:39: unterminated string meets end of file) on line #31 of app/views/students/index.html.erb:
+28:     <td><%=h student.marital_status %></td>
+29:     <td><%= link_to 'Turmas', student_student_classes_path(student) %></td>
+30:     <td><%= link_to 'Enviar Aviso', :action => :warning</td>
+31:     <td><%= link_to 'Visualizar', student %></td>
+32:     <% if can? :update, student %>
+33:       <td><%= link_to 'Editar', edit_student_path(student) %></td>
+34:     <% end %>
+
+    app/views/students/index.html.erb:39:in `compile!'
+    app/controllers/students_controller.rb:14:in `index'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (200.5ms)
+Rendered rescues/_request_and_response (44.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 09:07:34) [GET]
+  [4;35;1mUser Load (2.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStudent Load (1.0ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 109ms (View: 38, DB: 4) | 200 OK [http://localhost/alunos]
+
+
+Processing StudentsController#warning (for 127.0.0.1 at 2010-08-04 09:07:37) [GET]
+  [4;35;1mUser Load (5.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 52ms (View: 11, DB: 5) | 200 OK [http://localhost/students/warning]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 09:08:17) [GET]
+  [4;36;1mUser Load (1.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStudent Load (1.2ms)[0m   [0mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 51ms (View: 28, DB: 3) | 200 OK [http://localhost/alunos]
+
+
+Processing StudentsController#warning (for 127.0.0.1 at 2010-08-04 09:09:04) [GET]
+  [4;36;1mUser Load (14.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 78ms (View: 11, DB: 14) | 200 OK [http://localhost/students/warning]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-08-04 09:09:14) [GET]
+  Parameters: {"id"=>"warning"}
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Student with ID=warning):
+  cancan (1.1.1) lib/cancan/controller_resource.rb:22:in `find'
+  cancan (1.1.1) lib/cancan/resource_authorization.rb:27:in `load_resource'
+  cancan (1.1.1) lib/cancan/resource_authorization.rb:18:in `load_and_authorize_resource'
+  cancan (1.1.1) lib/cancan/resource_authorization.rb:7:in `send'
+  cancan (1.1.1) lib/cancan/resource_authorization.rb:7:in `add_before_filter'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 09:25:39) [GET]
+  [4;36;1mUser Load (28.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStudent Load (1.0ms)[0m   [0mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 209ms (View: 69, DB: 30) | 200 OK [http://localhost/alunos]
+
+
+Processing StudentsController#warning (for 127.0.0.1 at 2010-08-04 09:25:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (8.1ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+
+SyntaxError (/home/freireag/code/bambooine/app/models/payment_mailer.rb:7: syntax error, unexpected tASSOC, expecting '}'
+    body {:student => student}
+                     ^):
+  app/controllers/students_controller.rb:93:in `warning'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (199.5ms)
+Rendered rescues/_request_and_response (3.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StudentsController#warning (for 127.0.0.1 at 2010-08-04 09:31:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mStudent Load (0.7ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 2) [0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 2) [0m
+
+ActionView::TemplateError (undefined local variable or method `student' for #<ActionView::Base:0xb69de688>) on line #1 of app/views/payment_mailer/payment_warning.text.plain.erb:
+1: Olá <%=h student.name %>, verificamos que seu pagamento está atrasado. Lembramos que a multa é de 500%.
+
+    app/views/payment_mailer/payment_warning.text.plain.erb:1
+    app/controllers/students_controller.rb:93:in `warning'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StudentsController#warning (for 127.0.0.1 at 2010-08-04 09:32:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.6ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Sent mail to freireag@gmail.com
+
+Date: Wed, 4 Aug 2010 09:32:23 -0300
+To: freireag@gmail.com
+Subject: Aviso de Pagamento
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4c595dd76c35b_9fc..fdb3d1c5a16a
+
+
+--mimepart_4c595dd76c35b_9fc..fdb3d1c5a16a
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+Ol=C3=A1 Aluno Dois, verificamos que seu pagamento est=C3=A1 atrasado. Le=
+mbramos que a multa =C3=A9 de 500%.
+
+
+--mimepart_4c595dd76c35b_9fc..fdb3d1c5a16a--
+
+ActionView::MissingTemplate (Missing template students/warning.erb in view path app/views:/home/freireag/.rvm/gems/ruby-1.8.7-p174/gems/devise-1.0.7/app/views):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/freireag/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 09:38:26) [GET]
+  [4;35;1mUser Load (23.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mStudent Load (3.2ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 249ms (View: 53, DB: 26) | 200 OK [http://localhost/alunos]
+
+
+Processing StudentsController#warning (for 127.0.0.1 at 2010-08-04 09:38:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (0.7ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Sent mail to freireag@gmail.com
+
+Date: Wed, 4 Aug 2010 09:38:28 -0300
+To: freireag@gmail.com
+Subject: Aviso de Pagamento
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4c595f446e4c3_9fc..fdb4b0c163b9
+
+
+--mimepart_4c595f446e4c3_9fc..fdb4b0c163b9
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+Ol=C3=A1 Aluno Dois, verificamos que seu pagamento est=C3=A1 atrasado. Le=
+mbramos que a multa =C3=A9 de 500%.
+
+
+--mimepart_4c595f446e4c3_9fc..fdb4b0c163b9--
+Redirected to http://localhost:3000/alunos
+Completed in 270ms (DB: 1) | 302 Found [http://localhost/alunos/1/warning]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-08-04 09:38:29) [GET]
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mStudent Load (1.0ms)[0m   [0mSELECT * FROM "students" [0m
+Rendering template within layouts/application
+Rendering students/index
+Completed in 72ms (View: 29, DB: 3) | 200 OK [http://localhost/alunos]
