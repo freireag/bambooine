@@ -1,3 +1,0 @@
-= link_to 'New post', new_object_url if authorized?
-= render :partial => @posts.reverse.first, :locals => {:body => @posts.reverse.first.body}
-= render :partial => 'post', :collection => @posts.reverse.values_at(1..5).delete_if {|x| !x}

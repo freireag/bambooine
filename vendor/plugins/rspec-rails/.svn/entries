@@ -1,118 +1,0 @@
-8
-
-dir
-16
-http://freireag.svn.beanstalkapp.com/bambooine/trunk/vendor/plugins/rspec-rails
-http://freireag.svn.beanstalkapp.com/bambooine
-
-
-
-2008-06-12T23:09:49.287935Z
-5
-freireag
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-0444ab02-770f-4c13-a078-6dbff9d429ee
-
-Rakefile
-file
-
-
-
-
-2008-06-15T05:33:17.000000Z
-739de93985df731408dc32643c5d577a
-2008-06-12T23:09:49.287935Z
-5
-freireag
-
-spec_resources
-dir
-
-tasks
-dir
-
-.gitignore
-file
-
-
-
-
-2008-06-15T05:33:17.000000Z
-140d8b67b88d462e2c857f4d5bd98866
-2008-06-12T23:09:49.287935Z
-5
-freireag
-
-init.rb
-file
-
-
-
-
-2008-06-15T05:33:17.000000Z
-640f74b8156893c1bc98a2050c8589d3
-2008-06-12T23:09:49.287935Z
-5
-freireag
-
-lib
-dir
-
-stories
-dir
-
-CHANGES
-file
-
-
-
-
-2008-06-15T05:33:17.000000Z
-7b482af39201301daaa0efcecc22cfe1
-2008-06-12T23:09:49.287935Z
-5
-freireag
-
-generators
-dir
-
-MIT-LICENSE
-file
-
-
-
-
-2008-06-15T05:33:17.000000Z
-313081092d4b1e5f1e1a72e356485c1a
-2008-06-12T23:09:49.287935Z
-5
-freireag
-
-spec
-dir
-
-README
-file
-
-
-
-
-2008-06-15T05:33:17.000000Z
-7f43e7742115780c1cca395e6d7b4424
-2008-06-12T23:09:49.287935Z
-5
-freireag
-
